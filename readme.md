@@ -15,7 +15,7 @@ Ce projet est une API développée avec Node.js, Express, et TypeScript, utilisa
 1. **Cloner le dépôt**
 
    ```bash
-   git clone <URL_DU_DÉPÔT>
+   git clone https://github.com/ddtraceweb/mpg_api.git
    cd mpg-api
    ```
 
