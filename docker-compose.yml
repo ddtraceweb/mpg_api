@@ -1,0 +1,22 @@
+services:
+  couchbase:
+    image: couchbase:latest
+    container_name: couchbase-server
+    environment:
+      - COUCHBASE_ADMIN_USERNAME=admin
+      - COUCHBASE_ADMIN_PASSWORD=monpetitgazon
+    ports:
+      - "8091-8096:8091-8096"
+      - "11210:11210"
+    volumes:
+      - couchbase_data:/opt/couchbase/var
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge
+
+volumes:
+  couchbase_data:
+    driver: local
